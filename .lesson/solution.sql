@@ -8,12 +8,15 @@
 
 .print
 .print Q1c(i)
-
-
+SELECT username, videoName
+FROM Vlogger, Video
+WHERE Vlogger.vloggerID = Video.vloggerID
+AND rating > 3;
 
 
 .print
 .print Q1c(ii)
-
+DELETE FROM Video
+WHERE videoID = 3;
 
 
